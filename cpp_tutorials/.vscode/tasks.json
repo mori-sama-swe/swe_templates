@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "clang++",
+           "args": [
+    "-std=c++20",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-O2",
+    "-I/opt/homebrew/include",     // adds the include path for gumbo (and others)
+    "main.cpp",
+    "pointers_test.cpp",
+    "character_test.cpp",
+    "constandpointers.cpp",
+    "udemy_test.cpp",
+    "-L/opt/homebrew/lib",         // adds the library path for gumbo (and others)
+    "-lcurl",
+    "-lgumbo",
+    "-o",
+    "my_program"
+],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

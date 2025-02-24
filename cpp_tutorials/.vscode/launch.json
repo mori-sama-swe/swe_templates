@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch my_program",
+            "type": "lldb-dap",
+            "request": "launch",
+            "program": "${workspaceFolder}/my_program",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false,
+            "preLaunchTask": "build",
+        }
+    ]
+}
